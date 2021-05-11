@@ -15,14 +15,16 @@ public class secondForm {
         JTextField kol = new JTextField();
         JLabel vvod = new JLabel();
         vvod = new JLabel("Введите колличество тел:");
-        vvod.setLocation(10, 30);
+        vvod.setLocation(20, 260);
         vvod.setSize(200, 40);
         kolGUI.add(vvod);
-
-        kol.setLocation(10, 90);
+        kol.setLocation(180, 260);
         kol.setSize(100, 40);
         kolGUI.add(kol);
-
+        JLabel label = new JLabel("Несколько примеров:");
+        label.setLocation(20, 10);
+        label.setSize(200, 20);
+        kolGUI.add(label);
         ButtonGroup gr = new ButtonGroup();
         JRadioButton r0 = new JRadioButton("Задать свою систему");
         JRadioButton r1 = new JRadioButton("2 тела");
@@ -38,21 +40,20 @@ public class secondForm {
         gr.add(r4);
         gr.add(r5);
         gr.add(r6);
-        r0.setLocation(20,150);
-        r0.setSize(250, 40);
-        r1.setLocation(20,180);
+        r0.setLocation(20,230);
+        r0.setSize(180, 30);
+        r1.setLocation(20,30);
         r1.setSize(250, 40);
-        r2.setLocation(20,210);
+        r2.setLocation(20,60);
         r2.setSize(250, 40);
-        r3.setLocation(20,240);
+        r3.setLocation(20,90);
         r3.setSize(250, 40);
-        r4.setLocation(20,270);
+        r4.setLocation(20,120);
         r4.setSize(250, 40);
-        r5.setLocation(20,300);
+        r5.setLocation(20,150);
         r5.setSize(250, 40);
-        r5.setLocation(20,300);
+        r6.setLocation(20,180);
         r6.setSize(250, 40);
-        r6.setLocation(20,330);
         kolGUI.add(r0);
         kolGUI.add(r1);
         kolGUI.add(r2);
@@ -99,8 +100,8 @@ public class secondForm {
             }
         });
 
-        button.setLocation(120,90);
-        button.setSize(60, 40);
+        button.setLocation(180,300);
+        button.setSize(90, 40);
         kolGUI.add(button);
 
         return (kolGUI);
